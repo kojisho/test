@@ -1,0 +1,40 @@
+import h5py
+import theano
+import theano.tensor as T
+import numpy as np
+
+if theano.config.device == 'cpu':
+    from theano.tensor.shared_randomstreams import RandomStreams
+else:
+    from theano.sandbox.rng_mrg import MRG_RandomStreams as RandomStreams
+
+from util import shared_zeros, shared_normal, shared_normal_vector
+from attention import SelectiveAttentionModel
+from collections import OrderedDict
+import datetime
+import sys
+import json
+import math
+import cPickle as pickle
+from random import randint
+
+
+
+if __name__ == '__main__':
+    model_name = "models/mnist-captions.json"
+    with open(model_name) as model_file:
+        model = json.load(model_file)
+    dimY = int(model["model"][0]["dimY"])
+    dimLangRNN = int(model["model"][0]["dimLangRNN"])
+    dimAlign = int(model["model"][0]["dimAlign"])
+
+    dimX = int(model["model"][0]["dimX"])
+    dimReadAttent = int(model["model"][0]["dimReadAttent"])
+    dimWriteAttent = int(model["model"][0]["dimWriteAttent"])
+    dimRNNEnc = int(model["model"][0]["dimRNNEnc"])
+    dimRNNDec = int(model["model"][0]["dimRNNDec"])
+    dimZ = int(model["model"][0]["dimZ"])
+    runSteps = int(model["model"][0]["runSteps"])
+
+
+
