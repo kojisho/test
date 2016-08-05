@@ -6,7 +6,7 @@ import numpy as np
 if theano.config.device == 'cpu':
     from theano.tensor.shared_randomstreams import RandomStreams
 else:
-    from theano.sandbox.rng_mrg import MRG_RandomStreams as RandomStreams
+    from theano.sandbox.rng_mrg import MRG_RandomStreams as RandomStreams 
 
 from util import shared_zeros, shared_normal, shared_normal_vector
 from attention import SelectiveAttentionModel
@@ -18,25 +18,59 @@ import math
 import cPickle as pickle
 from random import randint
 
+from func0805 import *
+
 create_captions = __import__('create-captions')
 create_mnist_captions_dataset = create_captions.create_mnist_captions_dataset
 
-#assert(theano.config.scan.allow_gc == True), "set scan.allow_gc to True ; otherwise you will run out of gpu memory"
-#assert(theano.config.allow_gc == True), "set allow_gc to True ; otherwise you will run out of gpu memory"
+class ReccurentAttentionVAE():
 
-sys.stdout.flush()
+    def __init__(self, dimY, dimLangRNN, dimAlign, dimX, dimReadAttent, dimWriteAttent, dimRNNEnc, dimRNNDec, dimZ, runSteps, batch_size, reduceLRAfter, inputData, inputLabels, valData=None, valLabels=None, pathToWeights=None):
+        self.dimY = dimY
+        self.dimLangRNN = dimLangRNN
+        self.dimAlign = dimAlign
+        self.dimX = dimX
+        self.dimReadAttent = dimReadAttent
+        self.dimWriteAttent = dimWriteAttent
+        self.dimRNNEnc = dimRNNEnc
+        self.dimRNNDec = dimRNNDec
+        self.dimZ = dimZ
+        self.runSteps = runSteps
+        self.batch_size = batch_size
+        self.reduceLRAfter = reduceLRAfter
+        self.pathToWeights = pathToWeights
 
-floatX = theano.config.floatX
+        self.inputData = inputData
+        self.inputLabels = inputLabels  
 
-np.random.seed(np.random.randint(1 << 30))
-rng = RandomStreams(seed=np.random.randint(1 << 30))
+        self.banned = [randint(0,10) for i in xrange(12)]
 
-#np.random.seed(34)
-#rng = RandomStreams(seed=34)
+        print 'Banned configurations are :'
+        print self.banned
 
-params_names = ['W_y_hLangEnc', 'W_hLangEnc_hLangEnc', 'b_hLangEnc', 'W_yRev_hLangEncRev', 'W_hLangEncRev_hLangEncRev', 'b_hLangEncRev', 'W_lang_align', 'W_hdec_align', 'b_align', 'v_align', 'W_s_hdec', 'W_hdec_read_attent', 'b_read_attent', 'W_henc_henc', 'W_inp_henc', 'b_henc', 'W_henc_mu', 'W_henc_logsigma', 'b_mu', 'b_logsigma', 'W_hdec_hdec', 'W_z_hdec', 'b_hdec', 'W_hdec_write_attent', 'b_write_attent', 'W_hdec_c', 'b_c', 'W_hdec_mu_and_logsigma_prior', 'b_mu_and_logsigma_prior', 'h0_lang', 'h0_enc', 'h0_dec', 'c0']
+        inputImages, inputCaptions, inputCounts = create_mnist_captions_dataset(inputData, inputLabels, self.banned)
+        print 'Train Dataset'
+        print inputImages.shape, inputCaptions.shape, inputCounts
 
+        self.train_data = theano.shared(inputImages)
+        self.train_captions = theano.shared(inputCaptions)
+        self.input_shape = inputImages.shape
 
+        del inputImages
+        del inputCaptions
+
+        if valData != None:
+            valImages, valCaptions, valCounts = create_mnist_captions_dataset(valData, valLabels, self.banned)
+            print 'Val Dataset'
+            print valImages.shape, valCaptions.shape, valCounts
+
+            self.val_data = theano.shared(valImages)
+            self.val_captions = theano.shared(valCaptions)
+            self.val_shape = valData.shape
+            del valImages
+            del valCaptions
+
+        self._kl_final, self._logpxz, self._log_likelihood, self._c_ts, self._c_ts_gener, self._x, self._y, self._run_steps, self._updates_train, self._updates_gener, self._read_attent_params, self._write_attent_params, self._write_attent_params_gener, self._alphas_gener, self._params, self._mu_prior_t_gener, self._log_sigma_prior_t_gener = build_lang_encoder_and_attention_vae_decoder(self.dimY, self.dimLangRNN, self.dimAlign, self.dimX, self.dimReadAttent, self.dimWriteAttent, self.dimRNNEnc, self.dimRNNDec, self.dimZ, self.runSteps, self.pathToWeights)
 
 if __name__ == '__main__':
     model_name = "models/mnist-captions.json"
@@ -70,14 +104,13 @@ if __name__ == '__main__':
     if pathToWeights == "None":
         pathToWeights = None
 
-    dimension = int(math.sqrt(dimX/3))
-
+    dimension = int(math.sqrt(dimX / 3))
     if "data" in model:
         train_data_key = model["data"]["train_data"]["key"]
         train_data_file = model["data"]["train_data"]["file"]
         train_labels_key = model["data"]["train_labels"]["key"]
         train_labels_file = model["data"]["train_labels"]["file"]
-        
+
         val_data_key = model["data"]["validation_data"]["key"]
         val_data_file = model["data"]["validation_data"]["file"]
         val_labels_key = model["data"]["validation_labels"]["key"]
@@ -90,14 +123,15 @@ if __name__ == '__main__':
 
     train_data = np.copy(h5py.File(train_data_file, 'r')[train_data_key])
     train_labels = np.copy(h5py.File(train_labels_file, 'r')[train_labels_key])
-    
+
     val_data = np.copy(h5py.File(val_data_file, 'r')[val_data_key])
     val_labels = np.copy(h5py.File(val_labels_file, 'r')[val_labels_key])
-
     print train_data.shape, train_labels.shape, val_data.shape, val_labels.shape
 
     savedir = None
     if "savedir" in model:
         savedir = model["savedir"]
 
-
+    rvae = ReccurentAttentionVAE(dimY, dimLangRNN, dimAlign, dimX, dimReadAttent, dimWriteAttent, dimRNNEnc, dimRNNDec,
+                                 dimZ, runSteps, batch_size, reduceLRAfter, train_data, train_labels, valData=val_data,
+                                 valLabels=val_labels, pathToWeights=pathToWeights)
