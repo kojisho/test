@@ -101,6 +101,7 @@ def build_lang_encoder_and_attention_vae_decoder(dimY, dimLangRNN, dimAlign, dim
 
     if pathToWeights != None:
         W_y_hLangEnc, W_hLangEnc_hLangEnc, b_hLangEnc, W_yRev_hLangEncRev, W_hLangEncRev_hLangEncRev, b_hLangEncRev, W_lang_align, W_hdec_align, b_align, v_align, W_s_hdec, W_hdec_read_attent, b_read_attent, W_henc_henc, W_inp_henc, b_henc, W_henc_mu, W_henc_logsigma, b_mu, b_logsigma, W_hdec_hdec, W_z_hdec, b_hdec, W_hdec_write_attent, b_write_attent, W_hdec_c, b_c, W_hdec_mu_and_logsigma_prior, b_mu_and_logsigma_prior, h0_lang, h0_enc, h0_dec, c0 = load_weights(pathToWeights)
+        print 'load weight file'
     else:
         W_y_hLangEnc, W_hLangEnc_hLangEnc, b_hLangEnc, W_yRev_hLangEncRev, W_hLangEncRev_hLangEncRev, b_hLangEncRev = create_lang_encoder_weights(dimY, dimLangRNN)
         W_lang_align, W_hdec_align, b_align, v_align, W_s_hdec = create_align_weights(dimLangRNN, dimAlign, dimRNNEnc, dimRNNDec)

@@ -1,0 +1,1021 @@
+Using gpu device 0: Tesla K40c (CNMeM is disabled, cuDNN not available)
+alignDraw2.py:338: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  if valData != None:
+(50000, 784) (50000,) (10000, 784) (10000,)
+Banned configurations are :
+[8, 0, 10, 9, 7, 5, 5, 1, 3, 7, 0, 7]
+Train Dataset
+(10000, 3600) (10000, 12) [1126, 1268, 1181, 1156, 1310, 1341, 1284, 1334]
+Val Dataset
+(10000, 3600) (10000, 12) [1184, 1291, 1170, 1153, 1329, 1319, 1332, 1222]
+load weight file
+building gradient function
+0:00:14.016571
+building train function
+0:04:23.273049
+save/attention-vae-2016-8-6-22-54-54.h5
+Epoch 0 took 0:15:01.233110
+Done Saving Weights
+Train Results
+13.4454703247 297.329344177 310.774812927
+Validation Results
+building validate function
+0:00:03.254838
+13.4188062134 293.707868652 307.126673584
+
+
+Recreated Train Dataset
+[1158, 1350, 1197, 1125, 1318, 1260, 1294, 1298]
+
+
+Epoch 1 took 0:15:02.209011
+Done Saving Weights
+Train Results
+13.4980143555 290.560974731 304.058988342
+Recreated Train Dataset
+[1189, 1281, 1146, 1218, 1219, 1278, 1341, 1328]
+
+
+Epoch 2 took 0:14:51.811652
+Done Saving Weights
+Train Results
+14.383804541 284.215779877 298.599584045
+Recreated Train Dataset
+[1219, 1247, 1222, 1138, 1301, 1313, 1297, 1263]
+
+
+Epoch 3 took 0:14:55.178253
+Done Saving Weights
+Train Results
+15.3437114502 277.061520844 292.405232849
+Validation Results
+building validate function
+0:00:06.373037
+17.187346582 273.969303436 291.156647949
+
+
+Recreated Train Dataset
+[1164, 1336, 1160, 1188, 1264, 1238, 1351, 1299]
+
+
+Epoch 4 took 0:15:01.305240
+Done Saving Weights
+Train Results
+16.2579475708 274.626598358 290.884543762
+Recreated Train Dataset
+[1173, 1359, 1196, 1113, 1290, 1273, 1305, 1291]
+
+
+Epoch 5 took 0:15:02.278921
+Done Saving Weights
+Train Results
+17.0275768921 269.815231171 286.842808533
+Recreated Train Dataset
+[1144, 1329, 1160, 1164, 1315, 1298, 1338, 1252]
+
+
+Epoch 6 took 0:15:01.779127
+Done Saving Weights
+Train Results
+17.7353953247 263.159974823 280.895369263
+Validation Results
+building validate function
+0:00:03.079401
+18.7461439331 261.455973053 280.202116241
+
+
+Recreated Train Dataset
+[1161, 1309, 1135, 1171, 1253, 1371, 1318, 1282]
+
+
+Epoch 7 took 0:15:05.306735
+Done Saving Weights
+Train Results
+18.5752276123 258.828902435 277.404128876
+Recreated Train Dataset
+[1182, 1304, 1199, 1163, 1306, 1264, 1326, 1256]
+
+
+Epoch 8 took 0:14:59.536239
+Done Saving Weights
+Train Results
+19.2018681763 255.605990295 274.807857666
+Recreated Train Dataset
+[1165, 1278, 1114, 1114, 1386, 1321, 1308, 1314]
+
+
+Epoch 9 took 0:14:56.506670
+Done Saving Weights
+Train Results
+19.7318123779 247.893151703 267.624965515
+Validation Results
+building validate function
+0:00:03.087485
+20.540064917 247.573082123 268.113145905
+
+
+Recreated Train Dataset
+[1202, 1342, 1187, 1122, 1261, 1325, 1319, 1242]
+
+
+Epoch 10 took 0:14:52.225091
+Done Saving Weights
+Train Results
+20.4690146484 248.214543762 268.68355957
+Recreated Train Dataset
+[1148, 1300, 1170, 1159, 1294, 1276, 1354, 1299]
+
+
+Epoch 11 took 0:14:52.434187
+Done Saving Weights
+Train Results
+20.8135040039 243.202306519 264.015810699
+Recreated Train Dataset
+[1191, 1299, 1162, 1149, 1304, 1287, 1301, 1307]
+
+
+Epoch 12 took 0:15:04.422453
+Done Saving Weights
+Train Results
+21.3059806641 240.662520142 261.968500977
+Validation Results
+building validate function
+0:00:03.085516
+22.0067431519 238.672008667 260.678751678
+
+
+Recreated Train Dataset
+[1210, 1285, 1122, 1190, 1279, 1342, 1269, 1303]
+
+
+Epoch 13 took 0:14:55.580219
+Done Saving Weights
+Train Results
+21.915788855 237.920577087 259.836365967
+Recreated Train Dataset
+[1164, 1263, 1222, 1177, 1295, 1306, 1304, 1269]
+
+
+Epoch 14 took 0:15:02.518799
+Done Saving Weights
+Train Results
+22.1729128906 235.242590485 257.415502167
+Recreated Train Dataset
+[1105, 1319, 1131, 1200, 1274, 1338, 1333, 1300]
+
+
+Epoch 15 took 0:15:02.435846
+Done Saving Weights
+Train Results
+22.9132635498 232.12379715 255.037059174
+Validation Results
+building validate function
+0:00:03.192920
+21.9183582275 233.93148468 255.849841919
+
+
+Recreated Train Dataset
+[1234, 1300, 1174, 1119, 1284, 1301, 1275, 1313]
+
+
+Epoch 16 took 0:15:20.233144
+Done Saving Weights
+Train Results
+23.3245632324 230.328439484 253.653002625
+Recreated Train Dataset
+[1172, 1357, 1195, 1134, 1304, 1256, 1295, 1287]
+
+
+Epoch 17 took 0:15:10.262263
+Done Saving Weights
+Train Results
+23.6054483887 227.920551758 251.526001587
+Recreated Train Dataset
+[1191, 1254, 1204, 1196, 1294, 1255, 1297, 1309]
+
+
+Epoch 18 took 0:14:59.648757
+Done Saving Weights
+Train Results
+24.1195581055 225.175222321 249.294779663
+Validation Results
+building validate function
+0:00:03.089761
+24.3143713623 224.01529129 248.329661407
+
+
+Recreated Train Dataset
+[1198, 1308, 1124, 1188, 1307, 1314, 1305, 1256]
+
+
+Epoch 19 took 0:14:59.919204
+Done Saving Weights
+Train Results
+24.4910426758 222.383574066 246.874616394
+Recreated Train Dataset
+[1149, 1272, 1242, 1085, 1243, 1373, 1351, 1285]
+
+
+Epoch 20 took 0:14:48.497276
+Done Saving Weights
+Train Results
+24.860727002 219.307336273 244.168062286
+Recreated Train Dataset
+[1148, 1280, 1173, 1126, 1338, 1290, 1321, 1324]
+
+
+Epoch 21 took 0:15:05.790673
+Done Saving Weights
+Train Results
+25.0000766357 216.506591644 241.506666565
+Validation Results
+building validate function
+0:00:03.085615
+26.833294458 215.835020142 242.66831665
+
+
+Recreated Train Dataset
+[1122, 1294, 1185, 1118, 1329, 1296, 1297, 1359]
+
+
+Epoch 22 took 0:14:59.437543
+Done Saving Weights
+Train Results
+25.4869562012 215.155939178 240.642896576
+Recreated Train Dataset
+[1174, 1264, 1169, 1161, 1316, 1316, 1280, 1320]
+
+
+Epoch 23 took 0:15:04.721828
+Done Saving Weights
+Train Results
+25.8433395264 212.339060822 238.182399902
+Recreated Train Dataset
+[1169, 1286, 1159, 1193, 1284, 1298, 1302, 1309]
+
+
+Epoch 24 took 0:15:03.795377
+Done Saving Weights
+Train Results
+26.2002919434 211.860645294 238.0609375
+Validation Results
+building validate function
+0:00:03.093346
+25.3885958984 209.530279388 234.918875885
+
+
+Recreated Train Dataset
+[1197, 1333, 1179, 1124, 1350, 1267, 1289, 1261]
+
+
+Epoch 25 took 0:14:55.143554
+Done Saving Weights
+Train Results
+26.6384656006 211.179158173 237.817623749
+Recreated Train Dataset
+[1185, 1325, 1157, 1140, 1269, 1299, 1325, 1300]
+
+
+Epoch 26 took 0:15:00.682322
+Done Saving Weights
+Train Results
+26.8531618164 208.429555359 235.282718658
+Recreated Train Dataset
+[1173, 1316, 1202, 1151, 1268, 1320, 1256, 1314]
+
+
+Epoch 27 took 0:15:17.079627
+Done Saving Weights
+Train Results
+26.8603583252 206.769386902 233.629746094
+Validation Results
+building validate function
+0:00:03.220002
+26.8957955322 207.527899017 234.423694305
+
+
+Recreated Train Dataset
+[1173, 1278, 1213, 1154, 1300, 1282, 1304, 1296]
+
+
+Epoch 28 took 0:15:16.115726
+Done Saving Weights
+Train Results
+26.9604107666 204.190900879 231.151311188
+Recreated Train Dataset
+[1151, 1344, 1205, 1150, 1308, 1260, 1313, 1269]
+
+
+Epoch 29 took 0:15:10.798325
+Done Saving Weights
+Train Results
+27.2556002197 203.765011444 231.020611877
+Recreated Train Dataset
+[1204, 1264, 1152, 1178, 1379, 1257, 1243, 1323]
+
+
+Epoch 30 took 0:15:10.910876
+Done Saving Weights
+Train Results
+27.2046995605 202.080119171 229.284818726
+Validation Results
+building validate function
+0:00:03.153083
+26.7247595947 199.858219757 226.582979431
+
+
+Recreated Train Dataset
+[1119, 1321, 1206, 1215, 1265, 1269, 1303, 1302]
+
+
+Epoch 31 took 0:15:07.028590
+Done Saving Weights
+Train Results
+27.1958653809 200.685472107 227.881337738
+Recreated Train Dataset
+[1157, 1270, 1182, 1190, 1283, 1267, 1322, 1329]
+
+
+Epoch 32 took 0:15:11.831911
+Done Saving Weights
+Train Results
+27.165848584 198.093455658 225.259304657
+Recreated Train Dataset
+[1204, 1325, 1191, 1183, 1329, 1244, 1222, 1302]
+
+
+Epoch 33 took 0:15:16.818136
+Done Saving Weights
+Train Results
+27.482764502 199.062214813 226.544981079
+Validation Results
+building validate function
+0:00:03.096201
+26.8204049316 197.908137665 224.728544006
+
+
+Recreated Train Dataset
+[1195, 1302, 1188, 1114, 1275, 1288, 1339, 1299]
+
+
+Epoch 34 took 0:15:03.889829
+Done Saving Weights
+Train Results
+27.6938518555 196.095017242 223.788869934
+Recreated Train Dataset
+[1204, 1315, 1215, 1139, 1275, 1281, 1263, 1308]
+
+
+Epoch 35 took 0:14:48.217580
+Done Saving Weights
+Train Results
+28.0116691162 194.625265808 222.636933899
+Recreated Train Dataset
+[1162, 1344, 1248, 1159, 1236, 1291, 1243, 1317]
+
+
+Epoch 36 took 0:14:59.607614
+Done Saving Weights
+Train Results
+28.0506804199 194.656826324 222.707507172
+Validation Results
+building validate function
+0:00:03.099661
+28.6087341064 190.23815567 218.846889801
+
+
+Recreated Train Dataset
+[1115, 1375, 1194, 1159, 1300, 1251, 1297, 1309]
+
+
+Epoch 37 took 0:14:57.413683
+Done Saving Weights
+Train Results
+28.3105811768 191.382506561 219.693087463
+Recreated Train Dataset
+[1213, 1312, 1158, 1134, 1300, 1292, 1289, 1302]
+
+
+Epoch 38 took 0:15:09.599597
+Done Saving Weights
+Train Results
+28.5021610596 188.711894684 217.214056702
+Recreated Train Dataset
+[1192, 1320, 1190, 1118, 1281, 1272, 1326, 1301]
+
+
+Epoch 39 took 0:15:13.425499
+Done Saving Weights
+Train Results
+28.7439759277 188.559737244 217.303712158
+Validation Results
+building validate function
+0:00:03.241585
+28.6190865234 185.690209808 214.309295349
+
+
+Recreated Train Dataset
+[1149, 1296, 1143, 1167, 1378, 1263, 1319, 1285]
+
+
+Epoch 40 took 0:15:18.070471
+Done Saving Weights
+Train Results
+28.9000753418 185.721450043 214.621525726
+Recreated Train Dataset
+[1166, 1342, 1137, 1174, 1299, 1259, 1308, 1315]
+
+
+Epoch 41 took 0:15:09.789719
+Done Saving Weights
+Train Results
+29.2664728516 184.855435486 214.121908417
+Recreated Train Dataset
+[1154, 1304, 1262, 1182, 1289, 1262, 1280, 1267]
+
+
+Epoch 42 took 0:15:02.257380
+Done Saving Weights
+Train Results
+29.5659803223 184.258349915 213.824329987
+Validation Results
+building validate function
+0:00:03.169775
+28.7128367432 182.497857056 211.210692749
+
+
+Recreated Train Dataset
+[1196, 1311, 1177, 1186, 1287, 1299, 1269, 1275]
+
+
+Epoch 43 took 0:15:10.082261
+Done Saving Weights
+Train Results
+29.7352752686 183.014397125 212.749670258
+Recreated Train Dataset
+[1199, 1288, 1139, 1119, 1301, 1340, 1310, 1304]
+
+
+Epoch 44 took 0:15:16.056120
+Done Saving Weights
+Train Results
+29.8208732666 180.585961151 210.40683548
+Recreated Train Dataset
+[1188, 1307, 1130, 1178, 1325, 1288, 1287, 1297]
+
+
+Epoch 45 took 0:15:14.091662
+Done Saving Weights
+Train Results
+30.0943961426 179.491197815 209.585594635
+Validation Results
+building validate function
+0:00:03.121579
+29.4634774414 180.947091064 210.410568848
+
+
+Recreated Train Dataset
+[1176, 1326, 1153, 1124, 1311, 1293, 1316, 1301]
+
+
+Epoch 46 took 0:14:52.122031
+Done Saving Weights
+Train Results
+30.1965506592 178.341259308 208.537809906
+Recreated Train Dataset
+[1172, 1291, 1206, 1193, 1276, 1261, 1328, 1273]
+
+
+Epoch 47 took 0:14:50.635387
+Done Saving Weights
+Train Results
+30.6986776855 178.389499969 209.088176117
+Recreated Train Dataset
+[1136, 1317, 1152, 1182, 1321, 1278, 1328, 1286]
+
+
+Epoch 48 took 0:15:10.754555
+Done Saving Weights
+Train Results
+30.5842784424 175.879545441 206.463825378
+Validation Results
+building validate function
+0:00:03.102386
+30.2262982422 176.191151428 206.417449036
+
+
+Recreated Train Dataset
+[1145, 1325, 1183, 1126, 1282, 1270, 1384, 1285]
+
+
+Epoch 49 took 0:14:56.787933
+Done Saving Weights
+Train Results
+30.9705677002 174.500606384 205.471172791
+Recreated Train Dataset
+[1170, 1322, 1156, 1151, 1350, 1338, 1247, 1266]
+
+
+Epoch 50 took 0:14:56.297517
+Done Saving Weights
+Train Results
+31.0267156494 174.503942719 205.530658417
+Recreated Train Dataset
+[1182, 1257, 1237, 1157, 1244, 1348, 1281, 1294]
+
+
+Epoch 51 took 0:15:01.008719
+Done Saving Weights
+Train Results
+31.5590386475 173.050892334 204.60993042
+Validation Results
+building validate function
+0:00:07.267676
+31.679711377 171.197006378 202.87671814
+
+
+Recreated Train Dataset
+[1164, 1277, 1127, 1200, 1318, 1261, 1344, 1309]
+
+
+Epoch 52 took 0:15:18.035565
+Done Saving Weights
+Train Results
+31.4109119873 171.53914917 202.950061493
+Recreated Train Dataset
+[1173, 1290, 1169, 1161, 1293, 1259, 1387, 1268]
+
+
+Epoch 53 took 0:15:06.715147
+Done Saving Weights
+Train Results
+31.5216247803 171.346856079 202.868482513
+Recreated Train Dataset
+[1209, 1330, 1121, 1187, 1311, 1247, 1277, 1318]
+
+
+Epoch 54 took 0:15:30.118491
+Done Saving Weights
+Train Results
+31.8749020264 170.380672913 202.255575562
+Validation Results
+building validate function
+0:00:03.181342
+32.8640082031 167.719879456 200.583887329
+
+
+Recreated Train Dataset
+[1210, 1263, 1202, 1131, 1277, 1296, 1312, 1309]
+
+
+Epoch 55 took 0:15:07.554595
+Done Saving Weights
+Train Results
+31.9562773193 168.731848297 200.688125916
+Recreated Train Dataset
+[1162, 1302, 1165, 1131, 1298, 1343, 1306, 1293]
+
+
+Epoch 56 took 0:15:10.672863
+Done Saving Weights
+Train Results
+32.0059978027 167.079321594 199.085319366
+Recreated Train Dataset
+[1226, 1355, 1174, 1170, 1274, 1296, 1243, 1262]
+
+
+Epoch 57 took 0:15:17.423613
+Done Saving Weights
+Train Results
+32.4955768799 168.423075562 200.918652344
+Validation Results
+building validate function
+0:00:03.143734
+32.0542825439 166.180879669 198.235161591
+
+
+Recreated Train Dataset
+[1168, 1278, 1209, 1179, 1281, 1303, 1336, 1246]
+
+
+Epoch 58 took 0:14:56.370953
+Done Saving Weights
+Train Results
+32.2583176758 166.417174377 198.675492096
+Recreated Train Dataset
+[1167, 1288, 1147, 1205, 1268, 1308, 1320, 1297]
+
+
+Epoch 59 took 0:15:20.226970
+Done Saving Weights
+Train Results
+32.6144685303 164.931609497 197.546078186
+Recreated Train Dataset
+[1209, 1308, 1197, 1142, 1324, 1264, 1264, 1292]
+
+
+Epoch 60 took 0:15:12.444508
+Done Saving Weights
+Train Results
+32.9721867188 164.244916382 197.217104187
+Validation Results
+building validate function
+0:00:03.106033
+32.852925415 162.936373901 195.789297943
+
+
+Recreated Train Dataset
+[1163, 1250, 1157, 1168, 1285, 1322, 1347, 1308]
+
+
+Epoch 61 took 0:14:55.086471
+Done Saving Weights
+Train Results
+32.7756809082 162.267921906 195.043603668
+Recreated Train Dataset
+[1142, 1305, 1132, 1139, 1324, 1243, 1345, 1370]
+
+
+Epoch 62 took 0:15:02.019536
+Done Saving Weights
+Train Results
+32.7130684814 161.450502319 194.163570404
+Recreated Train Dataset
+[1082, 1308, 1218, 1184, 1282, 1271, 1334, 1321]
+
+
+Epoch 63 took 0:14:51.663530
+Done Saving Weights
+Train Results
+33.1557129883 161.51530014 194.671014404
+Validation Results
+building validate function
+0:00:07.264938
+32.9201156494 160.336966248 193.257081299
+
+
+Recreated Train Dataset
+[1124, 1322, 1181, 1152, 1339, 1279, 1297, 1306]
+
+
+Epoch 64 took 0:15:03.373617
+Done Saving Weights
+Train Results
+33.4498437012 160.74103302 194.19087677
+Recreated Train Dataset
+[1177, 1292, 1179, 1165, 1312, 1302, 1297, 1276]
+
+
+Epoch 65 took 0:15:03.113071
+Done Saving Weights
+Train Results
+33.3669172607 160.124802704 193.491719208
+Recreated Train Dataset
+[1199, 1303, 1260, 1093, 1277, 1339, 1288, 1241]
+
+
+Epoch 66 took 0:15:14.790755
+Done Saving Weights
+Train Results
+33.5170638916 159.262145233 192.779208527
+Validation Results
+building validate function
+0:00:03.184076
+34.0648219482 157.917334747 191.98215744
+
+
+Recreated Train Dataset
+[1144, 1345, 1149, 1198, 1324, 1276, 1285, 1279]
+
+
+Epoch 67 took 0:15:04.693749
+Done Saving Weights
+Train Results
+33.4790373047 158.445901337 191.924936829
+Recreated Train Dataset
+[1173, 1291, 1120, 1169, 1328, 1238, 1374, 1307]
+
+
+Epoch 68 took 0:15:10.146902
+Done Saving Weights
+Train Results
+33.5796819824 156.89411911 190.473800201
+Recreated Train Dataset
+[1183, 1254, 1221, 1188, 1240, 1319, 1347, 1248]
+
+
+Epoch 69 took 0:15:18.316166
+Done Saving Weights
+Train Results
+33.7279890869 156.883695984 190.611685181
+Validation Results
+building validate function
+0:00:03.147881
+33.8589538818 156.596741028 190.455693207
+
+
+Recreated Train Dataset
+[1209, 1312, 1198, 1146, 1305, 1272, 1253, 1305]
+
+
+Epoch 70 took 0:15:04.618614
+Done Saving Weights
+Train Results
+34.0781267822 156.656893311 190.735021057
+Recreated Train Dataset
+[1144, 1302, 1163, 1214, 1250, 1298, 1310, 1319]
+
+
+Epoch 71 took 0:14:55.575388
+Done Saving Weights
+Train Results
+33.9580044189 154.313303528 188.271308289
+Recreated Train Dataset
+[1165, 1294, 1158, 1157, 1352, 1266, 1279, 1329]
+
+
+Epoch 72 took 0:14:58.699708
+Done Saving Weights
+Train Results
+33.9446094971 154.442945251 188.387557068
+Validation Results
+building validate function
+0:00:03.106186
+33.951446167 154.06170578 188.013151855
+
+
+Recreated Train Dataset
+[1154, 1285, 1249, 1193, 1315, 1276, 1244, 1284]
+
+
+Epoch 73 took 0:15:02.619598
+Done Saving Weights
+Train Results
+34.3005614258 154.52208252 188.822644196
+Recreated Train Dataset
+[1164, 1287, 1203, 1261, 1188, 1322, 1257, 1318]
+
+
+Epoch 74 took 0:14:51.957242
+Done Saving Weights
+Train Results
+34.4550028564 154.520787354 188.975790253
+Recreated Train Dataset
+[1191, 1324, 1215, 1122, 1340, 1253, 1293, 1262]
+
+
+Epoch 75 took 0:15:08.802482
+Done Saving Weights
+Train Results
+34.378552417 152.714178925 187.092732239
+Validation Results
+building validate function
+0:00:07.278842
+35.0185816406 150.428886108 185.447467804
+
+
+Recreated Train Dataset
+[1205, 1271, 1158, 1178, 1295, 1335, 1280, 1278]
+
+
+Epoch 76 took 0:15:12.170291
+Done Saving Weights
+Train Results
+34.485760376 151.619431915 186.105192261
+Recreated Train Dataset
+[1220, 1242, 1189, 1129, 1284, 1330, 1280, 1326]
+
+
+Epoch 77 took 0:15:03.086032
+Done Saving Weights
+Train Results
+34.3727403564 150.578303223 184.951043396
+Recreated Train Dataset
+[1174, 1319, 1116, 1154, 1299, 1342, 1277, 1319]
+
+
+Epoch 78 took 0:15:10.513800
+Done Saving Weights
+Train Results
+34.4480543945 149.027165833 183.475220337
+Validation Results
+building validate function
+0:00:03.184146
+34.1753958008 149.38315567 183.558550262
+
+
+Recreated Train Dataset
+[1151, 1341, 1119, 1153, 1345, 1226, 1336, 1329]
+
+
+Epoch 79 took 0:15:00.334750
+Done Saving Weights
+Train Results
+34.4176461914 149.295345612 183.712991791
+Recreated Train Dataset
+[1201, 1335, 1175, 1154, 1312, 1227, 1303, 1293]
+
+
+Epoch 80 took 0:14:57.315601
+Done Saving Weights
+Train Results
+34.7804575195 148.548009338 183.328467255
+Recreated Train Dataset
+[1177, 1337, 1182, 1160, 1294, 1272, 1302, 1276]
+
+
+Epoch 81 took 0:15:12.104702
+Done Saving Weights
+Train Results
+34.9822377197 148.816779022 183.799017792
+Validation Results
+building validate function
+0:00:03.154418
+35.0780836914 147.29838562 182.376470032
+
+
+Recreated Train Dataset
+[1182, 1309, 1189, 1153, 1280, 1279, 1296, 1312]
+
+
+Epoch 82 took 0:15:00.531746
+Done Saving Weights
+Train Results
+34.7836612549 148.105470352 182.889131775
+Recreated Train Dataset
+[1201, 1287, 1207, 1122, 1297, 1318, 1295, 1273]
+
+
+Epoch 83 took 0:15:22.422400
+Done Saving Weights
+Train Results
+34.6308980957 146.315637207 180.946535797
+Recreated Train Dataset
+[1160, 1294, 1174, 1196, 1288, 1344, 1298, 1246]
+
+
+Epoch 84 took 0:15:17.569474
+Done Saving Weights
+Train Results
+34.8256731934 146.535760803 181.361433716
+Validation Results
+building validate function
+0:00:03.118037
+35.2395244873 144.923923035 180.163447418
+
+
+Recreated Train Dataset
+[1137, 1341, 1153, 1162, 1326, 1260, 1355, 1266]
+
+
+Epoch 85 took 0:15:02.634495
+Done Saving Weights
+Train Results
+34.6221491699 145.151858063 179.774008484
+Recreated Train Dataset
+[1229, 1276, 1202, 1152, 1284, 1279, 1280, 1298]
+
+
+Epoch 86 took 0:15:05.546998
+Done Saving Weights
+Train Results
+34.9092705566 146.38090271 181.290172882
+Recreated Train Dataset
+[1128, 1289, 1166, 1140, 1299, 1308, 1345, 1325]
+
+
+Epoch 87 took 0:14:56.246197
+Done Saving Weights
+Train Results
+34.8310438721 143.843380585 178.674423065
+Validation Results
+building validate function
+0:00:07.263258
+35.264156958 145.321661987 180.58581955
+
+
+Warning Val Results Got Worse
+Recreated Train Dataset
+[1117, 1257, 1201, 1182, 1333, 1307, 1336, 1267]
+
+
+Epoch 88 took 0:15:14.863973
+Done Saving Weights
+Train Results
+34.8173373779 143.854710541 178.672047882
+Recreated Train Dataset
+[1184, 1328, 1171, 1158, 1265, 1311, 1221, 1362]
+
+
+Epoch 89 took 0:15:10.534052
+Done Saving Weights
+Train Results
+34.894808667 143.750352707 178.645161285
+Recreated Train Dataset
+[1132, 1240, 1148, 1205, 1379, 1294, 1298, 1304]
+
+
+Epoch 90 took 0:15:05.692556
+Done Saving Weights
+Train Results
+35.0290725586 142.295443878 177.324516296
+Validation Results
+building validate function
+0:00:03.180262
+35.0311363525 141.145055008 176.176190796
+
+
+Recreated Train Dataset
+[1217, 1321, 1217, 1132, 1220, 1291, 1330, 1272]
+
+
+Epoch 91 took 0:15:04.879416
+Done Saving Weights
+Train Results
+35.1380002686 143.075623016 178.21362381
+Recreated Train Dataset
+[1198, 1247, 1176, 1233, 1290, 1266, 1268, 1322]
+
+
+Epoch 92 took 0:15:00.339087
+Done Saving Weights
+Train Results
+35.2939401611 142.408904266 177.702843628
+Recreated Train Dataset
+[1235, 1296, 1155, 1136, 1252, 1273, 1310, 1343]
+
+
+Epoch 93 took 0:15:01.588291
+Done Saving Weights
+Train Results
+35.2834771973 141.527967606 176.811444244
+Validation Results
+building validate function
+0:00:03.150564
+35.2108448486 140.652704163 175.863549652
+
+
+Recreated Train Dataset
+[1195, 1278, 1229, 1182, 1297, 1245, 1295, 1279]
+
+
+Epoch 94 took 0:15:05.135422
+Done Saving Weights
+Train Results
+35.2773521973 141.103128204 176.380480652
+Recreated Train Dataset
+[1218, 1303, 1140, 1200, 1282, 1285, 1293, 1279]
+
+
+Epoch 95 took 0:15:02.899087
+Done Saving Weights
+Train Results
+35.2943631592 140.659109344 175.953472137
+Recreated Train Dataset
+[1170, 1306, 1229, 1195, 1287, 1256, 1273, 1284]
+
+
+Epoch 96 took 0:14:57.171647
+Done Saving Weights
+Train Results
+35.446937207 140.749751129 176.196687775
+Validation Results
+building validate function
+0:00:03.115066
+35.0418518555 139.100876465 174.142727356
+
+
+Recreated Train Dataset
+[1226, 1317, 1168, 1136, 1255, 1332, 1298, 1268]
+
+
+Epoch 97 took 0:14:58.392277
+Done Saving Weights
+Train Results
+35.3037059326 138.799727097 174.103432922
+Recreated Train Dataset
+[1152, 1342, 1210, 1175, 1290, 1282, 1203, 1346]
+
+
+Epoch 98 took 0:15:10.805114
+Done Saving Weights
+Train Results
+35.3299317139 138.726183395 174.056116028
+Recreated Train Dataset
+[1183, 1271, 1162, 1127, 1247, 1337, 1345, 1328]
+
+
+Epoch 99 took 0:14:59.341881
+Done Saving Weights
+Train Results
+35.1324664551 137.438486099 172.570950928
+Validation Results
+building validate function
+0:00:07.290397
+35.2595253174 137.633637924 172.893162842
+
+
+Recreated Train Dataset
+[1152, 1289, 1181, 1155, 1308, 1311, 1330, 1274]
+
+
