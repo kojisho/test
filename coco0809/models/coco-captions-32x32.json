@@ -1,0 +1,38 @@
+{
+    "model": [
+        {
+            "dimY": "25323",
+            "dimLangRNN": "128",
+            "dimAlign": "512",
+            "dimX": "3072",
+            "dimReadAttent": "9",
+            "dimWriteAttent": "9",
+            "dimRNNEnc": "550",
+            "dimRNNDec": "550",
+            "dimZ": "275",
+            "runSteps": "32"
+        }
+    ],
+
+    "validateAfter": "1",
+    "save": "True",
+    "lr": "0.001",
+    "epochs": "3",
+    "batch_size": "100",
+    "reduceLRAfter": "0",
+    "pathToWeights": "None",
+    "data": {
+        "train": {
+            "images": "data/train-images-32x32.npy",
+            "captions": "data/train-captions.npy",
+            "cap2im": "data/train-cap2im.pkl",
+            "caplen": "data/train-captions-len.npy"
+        },
+        "dev": {
+            "images": "data/dev-images-32x32.npy",
+            "captions": "data/dev-captions.npy",
+            "cap2im": "data/dev-cap2im.pkl",
+            "caplen": "data/dev-captions-len.npy"
+        }
+    }
+}
