@@ -17,10 +17,10 @@
     "validateAfter": "1",
     "save": "True",
     "lr": "0.001",
-    "epochs": "3",
+    "epochs": "10",
     "batch_size": "100",
     "reduceLRAfter": "0",
-    "pathToWeights": "None",
+    "pathToWeights": "attention-vae-2016-8-11-19-15-51.h5",
     "data": {
         "train": {
             "images": "data/train-images-32x32.npy",

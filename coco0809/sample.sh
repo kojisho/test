@@ -1,0 +1,1 @@
+THEANO_FLAGS='scan.allow_gc=1,,floatX=float32' python test-sample0818.py  --model models/coco-captions-32x32.json --weights  save/attention-vae-2016-8-11-19-15-51.h5 --dictionary data/dictionary.pkl --gan_path data/gan.hdf5 --skipthought_path /home/gurao/tmp1608/skip-thoughts
